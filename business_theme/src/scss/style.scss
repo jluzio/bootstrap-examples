@@ -1,0 +1,148 @@
+/* Import */
+// @import in themes with font imports doesn't work with node-sass on a proxy (@2016/09/07)
+@import '../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/variables';
+//@import '../../bower_components/bootswatch-sass/cerulean/variables';
+//@import '../../bower_components/bootswatch-sass/journal/variables';
+//@import '../../bower_components/bootswatch-sass/paper/variables';
+
+// customization of variables
+$grid-float-breakpoint: $screen-md-min;
+//$grid-float-breakpoint-max: ($grid-float-breakpoint - 1);
+
+@import '../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap';
+//@import '../../bower_components/bootswatch-sass/cerulean/bootswatch';
+//@import '../../bower_components/bootswatch-sass/journal/bootswatch';
+//@import '../../bower_components/bootswatch-sass/paper/bootswatch';
+
+@import '../../bower_components/font-awesome/scss/font-awesome';
+@import '../../bower_components/compass-sass-mixins/lib/compass';
+
+// fonts
+//@import 'https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic';
+//@import 'https://fonts.googleapis.com/css?family=Montserrat:400,700';
+
+$primary-color: #0383c0;
+$font-special: 'Oswald', sans-serif;
+
+// Typography
+h1, h2, h3 {
+	text-transform: uppercase;
+	font-family: $font-special;
+}
+
+// body
+body {
+  padding-top: 90px;
+}
+
+// Navigation
+.body_navbar-fixed-top {
+  //padding-top: 50px;
+  //position: relative;
+}
+
+.nav {
+	margin-top: 18px;
+}
+
+.navbar {
+	min-height: 90px;
+  margin-bottom: 0 !important;
+}
+
+.navbar-brand {
+	height: auto;
+	padding-top: 15px;
+	margin: 0;
+}
+
+.navbar-nav {
+	margin: 0;
+	padding: 0;
+}
+
+.navbar-nav li {
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.navbar-nav > li > a {
+	padding: 20px;
+	font-size: 18px;
+	font-weight: bold;
+	border-right: 1px solid #ccc;
+	text-transform: uppercase;
+	font-family: $font-special;
+}
+
+.navbar-nav > li > a span {
+	margin:5px 0 0 0;
+	padding:0;
+	font-size: 14px;
+	display:block;
+	font-weight: normal;
+	font-family: arial;
+	text-transform: none;
+}
+
+.navbar-nav a:hover,
+.navbar-nav > .active > a,
+.navbar-nav > .active > a:focus {
+	background: $primary-color !important;
+	color: #fff !important;
+}
+
+.navbar-brand {
+    font-weight: 700;
+}
+
+.navbar-brand:focus {
+    outline: none;
+}
+
+.fa-color {
+	color: $primary-color;
+}
+
+section {
+  padding: 30px 0;
+}
+
+.section-primary {
+  background-color: $primary-color;
+}
+
+// validation
+input:not(:focus):invalid {
+  outline: 2px solid red;
+}
+input:focus:invalid {
+  outline: 2px solid blue;
+}
+
+// media queries
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: $screen-sm-min) {
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: $screen-md-min) {
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: $screen-lg-min) {
+}
+
+@media (max-width: $screen-md-min) {
+}
+
+
+// mixins
+@mixin vendor-prefix($name, $value) {
+  @each $vendor in ('-webkit-', '-moz-', '-ms-', '-o-', '') {
+    #{$vendor}#{$name}: #{$value};
+  }
+}

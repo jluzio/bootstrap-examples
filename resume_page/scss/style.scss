@@ -1,0 +1,70 @@
+// base.scss
+
+/* Import */
+@import 'reset';
+@import '../bower_components/bootstrap-sass/assets/stylesheets/bootstrap';
+
+//@import 'vendor/bootstrap';
+//see gulpfile.js:css-sass-with-copy
+$primary-color: #3b5a76;
+$background-color: #ededed;
+$text-color: #363636;
+$font-size: 16px;
+
+body {
+  background-color: $background-color;
+  text-color: $text-color;
+}
+
+.primary, strong, h2 {
+  color: $primary-color;
+}
+
+.container-main {
+  margin-top: 80px;
+  background-color: white;
+}
+
+header {
+  h1 {
+    text-align: center;
+    text-transform: uppercase;
+  }
+}
+
+.profile-img {
+  display: block;
+  margin: 0 auto;
+  margin-top: -80px;
+  width: 160px;
+}
+
+img.line {
+  width: 100%;
+}
+
+.education .media-left {
+  white-space: nowrap;
+}
+
+.recent-projects {
+
+  li {
+    list-style: none;
+    float: left;
+  }
+
+}
+
+.contacts {
+
+  li {
+    list-style: none;
+  }
+
+}
+
+.media {
+  background-color: $background-color;
+  padding: 10px 0 0px 10px;
+}

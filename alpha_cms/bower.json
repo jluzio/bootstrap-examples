@@ -1,0 +1,23 @@
+{
+  "name": "alpha_cms",
+  "description": "",
+  "main": "gulpfile.js",
+  "authors": [
+    "jluzio <joao.luzio@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap-sass": "bootstrap-sass-official#^3.3.6",
+    "handlebars": "^4.0.5",
+    "datatables.net": "^1.10.12",
+    "datatables.net-bs": "^1.10.12"
+  }
+}

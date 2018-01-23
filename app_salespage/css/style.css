@@ -1,0 +1,142 @@
+body {
+  padding-top: 50px;
+}
+
+section {
+  padding: 40px 0 40px 0;
+}
+
+section#feature {
+  background-color: #1caa98;
+  color: white;
+  overflow: auto;
+}
+
+section#feature ul li {
+  font-size: 22px;
+  list-style: none;
+  line-height: 2em;
+}
+
+section#title-bar {
+  height: 80px;
+  background-color: #1caa98;
+  color: #fff;
+  padding: 0;
+}
+
+section#title-bar h1 {
+  margin-bottom: 20px;
+}
+
+#middle .col-md-4, #about .col-md-4, #contact .col-md-4 {
+  margin-top: 10px;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  padding: 30px 0 20px 0;
+}
+
+footer .nav li {
+  display: inline-block;
+}
+
+footer a {
+  color: white;
+}
+
+footer p {
+  padding: 10px 15px;
+}
+
+.em-text {
+	color: #1caa98 !important;
+}
+
+.jumbotron {
+  height: 500px;
+  background: #1b222a url(../img/site_showcase_bg.jpg) no-repeat top center;
+  color: #fff;
+  overflow: hidden;
+}
+
+.jumbotron h1 {
+  margin-top: 60px;
+}
+
+.jumbotron p {
+  margin-bottom: 40px;
+}
+
+.jumbotron img.app-btn {
+  width: 40%;
+  margin-right: 30px;
+}
+
+.jumbotron img.showcase-img {
+  width: 61.5%;
+}
+
+img.demo {
+  width: 100%;
+  border: 1px solid #ccc;
+}
+
+img.logo {
+  width: 100%;
+}
+
+/* MEDIA QUERIES */
+/*
+Selectors in Bootstrap 3
+@media(max-width:767px){}
+@media(min-width:768px){}
+@media(min-width:992px){}
+@media(min-width:1200px){}
+*/
+
+@media (max-width: 1200px) {
+
+}
+
+@@media (max-width: 991px) {
+
+}
+
+@media (max-width: 1200px) {
+
+}
+
+@media (min-width: 768px) and (max-width: 990px) {
+  .jumbotron {
+    height: 400px;
+    background-size: 100% 100%;
+  }
+  .jumbotron img.app-btn {
+    width: 40%;
+  }
+  .jumbotron h1 {
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .jumbotron {
+    height: 350px;
+    background-size: 100% 100%;
+  }
+}
+
+@media (max-width: 500px) {
+  .jumbotron {
+    background-image: none;
+  }
+  .jumbotron img.app-btn {
+    width: 30%;
+    margin: 0 auto 10px auto;
+    display: block;
+  }
+
+}
